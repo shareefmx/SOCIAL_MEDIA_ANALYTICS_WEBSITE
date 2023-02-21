@@ -1,0 +1,48 @@
+.ifr{
+    position: relative;
+    width: 1101px;
+    height: 712px;
+    overflow: hidden;
+  }
+
+  .ift{
+    position: absolute;
+    top: -160px;
+    left:-19px;
+    width: 1140px;
+    height: 1997px;
+  }
+  .ir{
+    position: relative;
+    width: 1104px;
+    height: 462px;
+    overflow: hidden;
+  }
+
+  .it{
+    position: absolute;
+    top: -1189px;
+    left:-68px;
+    width: 1216px;
+    height: 2000px;
+  }
+
+  .searchinput{
+    padding-top: 70px;
+    display: flex;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.inputprompt{
+    color: white;
+    padding: 0%;
+    margin: auto;
+}
+
+.submitbutton{
+    padding: 10px;
+}

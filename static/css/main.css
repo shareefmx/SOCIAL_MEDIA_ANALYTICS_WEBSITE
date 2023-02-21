@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url(home/bg/red.svg);
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.inputform {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-radius: 4px;
+    column-gap: 10px;
+}
+input[type="text"] {
+    flex: 14;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    flex: 2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ff7272;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #c23b3b;
+}
+select{
+    flex: 1.7;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px;
+    border-radius: 4px;
+}
+
+select.youtube{
+    background-color: #ff7272;
+    color: white;
+    border-radius: 4px;
+    border: 1px;
+}
+
+select.youtube:hover{
+    background-color: white;
+    color: black;
+    border: 1px;
+}
+
+select.twitter{
+    background-color: #69d7fa;
+    border-radius: 4px;
+    border: 1px;
+}
+
+select.twitter:hover{
+    border:1px;
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,39 @@
+body{
+    background-image: url('home/bg/about.svg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:white;
+    font-family: noe;
+    font-size: 70px;
+}
+
+.maincontent{
+    margin-top: 200px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: noe;
+    src: url(Noe.ttf);
+}
+
+@font-face {
+    font-family: mcdr;
+    src: url(MCDR.otf);
+}
+
+p{
+    font-family: mcdr;
+    font-size: 40px;
+    color: white;
+}

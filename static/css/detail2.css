@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: noe;
+    src: url(Noe.ttf);
+}
+
+@font-face {
+    font-family: mcdr;
+    src: url(MCDR.otf);
+}
+body{
+    font-family: 'lemonmilk';
+    /*background-color: rgb(22, 22, 22);*/
+    background-image: url(home/bg/blue.svg);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: 'lemonmilk';
+    font-weight: lighter;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+p{  
+    font-family: 'mcdr';
+    font-weight: bolder;
+}
+
+.ytname{
+    margin-top: 80px;
+    margin-left: 30px;
+    color: #ff7272;
+}
+
+.ytdesc{
+    color: rgb(207, 207, 207);
+    font-size: 40px;
+    margin: 0px 40px 10px 30px;
+}
+
+.ytviews{
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    margin-left: 30px;
+}
+.ttname{
+    margin-top: 80px;
+    margin-left: 90px;
+    color: #69d7fa;
+}
+
+.ttdesc{
+    color: rgb(207, 207, 207);
+    font-size: 40px;
+    margin: 0px 90px 10px 90px;
+}
+
+.ttfollows{
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    margin-left: 90px;
+}

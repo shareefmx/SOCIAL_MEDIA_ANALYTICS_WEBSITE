@@ -1,0 +1,44 @@
+.searchinput{
+    padding-top: 70px;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputprompt{
+    color: white;
+    padding: 0%;
+    margin: auto;
+}
+
+.ifr{
+    position: relative;
+    width: 965px;
+    height: 660px;
+    overflow: hidden;
+}
+    
+.ift{
+    position: absolute;
+    top: -172px;
+    left:-126px;
+    width: 1216px;
+    height: 2000px;
+}
+
+.ir{
+    position: relative;
+    width: 965px;
+    height: 438px;
+    overflow: hidden;
+  }
+
+  .it{
+    position: absolute;
+    top: -1122px;
+    left:-126px;
+    width: 1216px;
+    height: 2000px;
+  }
