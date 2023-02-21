@@ -17,3 +17,6 @@ This website is a proof of concept on working with API's and the usage of Flask 
 ![Screenshot (105)](https://user-images.githubusercontent.com/106791424/220278748-eef4b561-1bb8-4ddd-89ea-6c38dae5185a.png)
 
 ![Screenshot (109)](https://user-images.githubusercontent.com/106791424/220278784-02701685-ad46-4345-8f9b-8e2942e1e518.png)
+
+
+{ Add API key inside the python code }
