@@ -1,0 +1,55 @@
+{%extends 'base.html' %}
+
+{% block head %} 
+<link rel="stylesheet" href="{{ url_for('static',filename='css/livecount.css') }}">
+
+<title>Live Counter</title>
+    <script type="text/javascript">
+		function navigate() {
+            var selectedOption = document.querySelector("select").value;
+            if(selectedOption=='youtubedetails'){
+                var firstname= document.getElementById("firstname").value;
+                document.getElementById("gfgFrame").src
+				    = "https://socialcounts.org/youtube-live-subscriber-count/"+firstname;
+            }
+            if(selectedOption=='twitterdetails'){
+                var firstname= document.getElementById("firstname").value;
+                document.getElementById("gfgFrame").src
+				= "https://socialcounts.org/twitter-live-follower-count/"+firstname;
+		    }
+            if(selectedOption=='youtubedetails'){
+                var firstname= document.getElementById("firstname").value;
+                document.getElementById("fgFrame").src
+				    = "https://socialcounts.org/youtube-live-subscriber-count/"+firstname;
+            }
+            if(selectedOption=='twitterdetails'){
+                var firstname= document.getElementById("firstname").value;
+                document.getElementById("fgFrame").src
+				= "https://socialcounts.org/twitter-live-follower-count/"+firstname;
+		    }
+    }
+	</script>
+
+{% endblock %}
+{% block body %}
+
+    <div class="searchinput">
+    <select>
+        <option value="default">Select</option>
+        <option class="youtube" value="youtubedetails">Youtube</option>
+        <option class="twitter" value="twitterdetails">Twitter</option>
+    </select>
+    <p class="inputprompt">Enter the Channel ID / Username : </p>
+    <input class="inputbox" type="text" id="firstname" class="inputbox"/>
+    <button class="inputbutton" onclick="navigate()">Submit</button>
+    </div>
+    <!--<p id="channelidout"></p>-->
+    <br><br>
+    <center>
+        <div class="ifr">
+        <iframe id="gfgFrame" class="ift" src="" scrolling="no">
+        </iframe>
+        </div>
+    </center> 
+
+{% endblock %}

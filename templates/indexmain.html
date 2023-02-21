@@ -1,0 +1,31 @@
+{%extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+{% endblock %}
+
+{% block body %}
+<form class="inputform" action="/" method="POST">
+        <select id="platform" name="platform" onchange="this.className=this.options[this.selectedIndex].className" class="x" onclick="colorchange()">
+            <option value="default">Select</option>
+            <option class="youtube" value="youtubedetails">Youtube</option>
+            <option class="twitter" value="twitterdetails">Twitter</option>
+        </select>
+    <input name="channelname" type="text" placeholder="Enter Username" />
+    <button id='submitbutton' type="submit" value="Submit">Submit</button>
+    <script>
+        function colorchange(){
+            var selectedOption = document.querySelector("select").value;
+            if(selectedOption=='youtubedetails'){
+                document.body.style.backgroundImage="url('static/css/home/bg/red.svg')";
+                document.getElementById('submitbutton').style.backgroundColor='#ff7272';
+            }
+            else if(selectedOption=='twitterdetails'){
+                document.body.style.backgroundImage="url('static/css/home/bg/blue.svg')";
+                document.getElementById('submitbutton').style.backgroundColor='#69d7fa';
+                document.getElementById('submitbutton').style.color='black';
+            }
+        }
+    </script>
+</form>
+{% endblock %}

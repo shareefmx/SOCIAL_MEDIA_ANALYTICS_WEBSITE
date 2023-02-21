@@ -1,0 +1,60 @@
+{%extends 'base.html' %}
+
+{% block head %} 
+<link rel="stylesheet" href="{{ url_for('static',filename='css/compare.css') }}">
+<script type="text/javascript">
+    function navigate() {
+        var selectedOption = document.querySelector("select").value;
+        if(selectedOption=='youtubedetails'){
+            var firstname= document.getElementById("firstname").value;
+            var firstname1= document.getElementById("firstname1").value;
+            document.getElementById("gfgFrame").src
+                = "https://socialcounts.org/compare/youtube-live-subscriber-count/"+firstname+"/youtube-live-subscriber-count/"+firstname1;
+        }
+        if(selectedOption=='twitterdetails'){
+            var firstname= document.getElementById("firstname").value;
+            var firstname1= document.getElementById("firstname1").value;
+            document.getElementById("gfgFrame").src
+            = "https://socialcounts.org/compare/twitter-live-follower-count/"+firstname+"/twitter-live-follower-count/"+firstname1;
+        }
+        if(selectedOption=='youtubedetails'){
+            var firstname= document.getElementById("firstname").value;
+            var firstname1= document.getElementById("firstname1").value;
+            document.getElementById("fgFrame").src
+                = "https://socialcounts.org/compare/youtube-live-subscriber-count/"+firstname+"/youtube-live-subscriber-count/"+firstname1;
+        }
+        if(selectedOption=='twitterdetails'){
+            var firstname= document.getElementById("firstname").value;
+            var firstname1= document.getElementById("firstname1").value;
+            document.getElementById("fgFrame").src
+            = "https://socialcounts.org/compare/twitter-live-follower-count/"+firstname+"/twitter-live-follower-count/"+firstname1;
+        }
+    }
+</script>
+{% endblock %}
+
+{% block body %}
+<div class="searchinput">
+    <select>
+        <option value="default">Select</option>
+        <option class="youtube" value="youtubedetails">Youtube</option>
+        <option class="twitter" value="twitterdetails">Twitter</option>
+    </select>
+    <p class="inputprompt">Enter the 1st Channel ID / Username :</p><input type="text" id="firstname"/><br><br>
+    <p class="inputprompt">Enter the 2nd Channel ID / Username :</p><input type="text" id="firstname1"/><br><br>
+    <button class="submitbutton" onclick="navigate()">Submit</button>
+</div>
+
+    <center>
+        <div class="ifr">
+        <iframe id="gfgFrame" class="ift" src="" scrolling="no">
+        </iframe>
+        </div>
+    </center> 
+    <!--<center>
+        <div class="ir">
+        <iframe id="fgFrame" class="it" src="" scrolling="no">
+        </iframe>
+        </div>
+    </center>-->
+{% endblock %}

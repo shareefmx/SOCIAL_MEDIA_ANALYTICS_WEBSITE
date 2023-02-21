@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/detail.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 class="ytname">{{ channelname }}</h1>
+    <p class="ytdesc">{{ channeldesc }}</p>
+    <p class="ytdesc">Subscriber Count : {{ subcount }}</p>
+    <p class="ytdesc">Views : {{ viewcount }}</p>
+    <p class="ytdesc">Total Videos : {{ vidcount }}</p>
+</div>
+{% endblock %}

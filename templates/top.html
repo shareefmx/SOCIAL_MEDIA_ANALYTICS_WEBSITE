@@ -1,0 +1,40 @@
+{%extends 'base.html' %}
+{% block head %} 
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/top.css') }}">
+
+{% endblock %}
+{% block body %}
+<div class="flexy">
+    <ul>
+        <h1>Youtube</h1>
+        {% for acct in ytaccounts %}
+        <li>{{ acct }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <h1>Instagram</h1>
+        {% for acct in igaccounts %}
+        <li>{{ acct }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <h1>Facebook</h1>
+        {% for acct in fbaccounts %}
+        <li>{{ acct }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <h1>Twitch</h1>
+        {% for acct in twaccounts %}
+        <li>{{ acct }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <h1>TikTok</h1>
+        {% for acct in tikaccounts %}
+        <li>{{ acct }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{%extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/detail2.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 class="ttname">{{ handlename }}</h1>
+    <p class="ttdesc">{{ acc_desc_tt }}</p>
+    <p class="ttdesc">Followers : {{ followcount_tt }}</p>
+    <p class="ttdesc">Following : {{ followingcount_tt }}</p>
+    <p class="ttdesc">Account was created on {{ createdate }}</p>
+    <p class="ttdesc">Website : {{ contact }}</p>
+</div>
+{% endblock %}
